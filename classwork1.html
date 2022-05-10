@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #heading{
+            /* border: 1px solid red; */
+            background-color: white;
+            color: black;
+            width: auto;
+            height: 50px;
+            
+            
+            /* position: absolute; */
+            
+         
+        }
+            #heading div.mriti{
+                float: left;
+                text-align: left;
+                padding: 10px;
+            }
+           
+            #heading div.contact{
+                text-align: center;
+                padding: 10px;
+                word-spacing: 25px;
+                
+            } 
+            #heading div.cast{
+                float: right;
+                text-align: right;
+                bottom: 20px;
+            }
+
+
+
+        #big-image{
+            background-image: url("first\ image.jpg");
+            height: 500px;
+            width: auto;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+
+        #second-line{
+            display: grid;
+            grid-template-columns: 800px 1fr 1.5fr;
+            height: 100px;
+            
+        }
+        /* #second-line div {
+            border: 1px solid grey;
+        } */
+
+        #second-line div.middle{
+            background-color: orange;
+            padding-top: 20px;
+            padding-left: 45px;
+            font-size: 22px;
+        }   
+        #second-line div.right{
+            background-color: blue;
+        }   
+       
+        #second-line div.right {
+            position: relative;
+            bottom: 35px;
+        }
+        #second-line div.left {
+            display: grid;
+            grid-column-gap: 20px;
+            grid-template-columns: auto auto auto auto;
+            /* border: 1px solid red; */
+            padding-top: 20px;
+            padding-left: 80px;
+            padding-bottom: 20px;
+            padding-right: 60px;
+            box-sizing: border-box;
+            /* padding: 20px; */
+        }   
+        
+        /* #box div.page1 ::after{
+            width: 100px;
+            height: 25px;
+            border: 1px solid red;
+            background-color: red;
+            position: relative;
+        } */
+        
+        #box{
+            /* border: 1px solid black; */
+            width: auto;
+            height: 450px;
+            background-color:lightgrey;
+            display: grid;
+            grid-template-columns:40% 1fr 1fr 1fr 1fr;
+            grid-column-gap: 6px;
+            padding-top: 6em;
+            padding-bottom: 6em;
+            /* padding-left: 25em; */
+        }
+        /* .page2 , .page3 , .page4 , .page5{
+            border: 1px solid red;
+        } */
+        #box div.page2{
+            background-image: url("trip\ 1.jpg");
+            background-size: cover;
+        }
+        #box div.page3{
+            background-image: url("trip\ 2.jpg");
+            background-size: cover;
+        }
+        #box div.page4{
+            background-image: url("trip\ 3.jpg");
+            background-size: cover;
+        }
+        #box div.page5{
+            background-image: url("trip\ 4.jpg");
+            background-size: cover;
+        }
+        
+
+        #box2{
+            /* border: 1px solid black; */
+            height: 800px;
+            width: auto;
+            display: grid;
+            grid-template-rows: 150px auto;
+        }
+        /* .bulb1 , .bulb2 {
+            border: 1px solid red;
+        } */
+
+        #box2 div.bulb2{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            box-sizing: border-box;
+            grid-column-gap: 6px;
+            padding-left: 100px;
+            
+        }
+        .part1{
+            position: relative;
+        }
+        #box2 div.part2 , div.part3{
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-row-gap: 6px;
+            box-sizing: border-box;
+
+        }
+        .inner1, .inner2, .inner3, .inner4{
+             position: relative;
+        }
+
+        #box2 div.part1{
+            background-image: url("deluxe\ room.jpg");
+            background-size: cover;
+        }
+
+        #box2 div.part2 div.inner1{
+            background-image: url("premium\ room.jpg");
+            background-size: cover;
+          
+        }
+        #box2 div.part2 div.inner2{
+            background-image: url("special\ room.jpg");
+            background-size: cover;
+        }
+        #box2 div.part3 div.inner3{
+            background-image: url("twin\ room.jpg");
+            background-size: cover;
+        }
+        #box2 div.part3 div.inner4{
+            background-image: url("single\ room.jpg");
+            background-size: cover;
+        }
+    
+        h1.bulb1{
+            font-size: x-large;
+          
+        }
+        
+
+        
+
+        #box2 div.lin{
+            position: absolute;
+            color: white;
+            bottom: 0;
+            font-size: 30px;
+            padding-left: 20px;
+            padding-bottom: 20px ;
+        }
+
+
+       #fourth{
+            
+            height: 400px;
+            width: auto;
+        }  
+         #fourth{
+        display: grid;
+        grid-template-rows: 100px auto;
+        grid-row-gap: 6px;
+        box-sizing: border-box;
+        }
+       
+
+        #fourth div.section2{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 20px;
+            box-sizing: border-box;
+            margin-left: 100px;
+            margin-top: 60px;
+            margin-bottom: 80px;
+        }
+        .comment1, .comment2, .comment3{
+           
+            background-color: lightgrey;
+        }
+
+        #last h2{
+            text-align: center;
+        }
+        
+        #last{
+            display: grid;
+            height: 300px;
+            grid-template-rows: 100px auto;
+            box-sizing: border-box;
+            grid-row-gap: 30px;
+            
+        }
+        .last-box1, .last-box2{
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+        }
+        .last-box1{
+            text-align: center;
+            
+            box-sizing: border-box;
+            
+        }
+        #last div.last-box2{
+            display: grid;
+            grid-template-columns: 70% 1fr;
+            box-sizing: border-box;
+            margin-right: 400px;
+            margin-left: 400px;
+            margin-top: 50px;
+            margin-bottom: 70px;
+        }
+        /* .last-box3, .last-box4{
+            border: 1px solid green;
+        } */
+        .last-box3{
+            background-color: lightgrey;
+            padding: 15px;
+        }
+        .last-box4{
+            background-color: orange;
+            padding: 20px;
+            padding-left: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <div class="mriti">Mrittika.</div>     
+        <div class="contact">   HOME   ABOUT-US   FACILITIES   CONTACT-US </div>
+         <div class="cast"> CAST</div>
+    </div>
+
+    <div id="big-image"></div>
+
+    <div id="second-line">
+        <div class="left" >
+            <div class="line1">DESTINATION<br>
+                <select name="selected option">
+                    <option value="value1">Egypt</option>
+                    <option value="value2">Paris</option>
+                    <option value="value3">New York</option>
+                    <option value="value4">Dubai</option>
+                    <option value="value5">Greece</option>
+                    <option value="value6">Maldives</option>
+                    <option value="value7">Netherlands</option>
+                    <option value="value8">England</option>
+                </select>
+            </div>
+            <div class="line2">ADULTS <br>
+                <select name="selected option">
+                    <option value="value1">1</option>
+                    <option value="value2">2</option>
+                    <option value="value3">3</option>
+                    <option value="value4">4</option>
+                    <option value="value5">5</option>
+                    <option value="value6">6</option>
+                    <option value="value7">7</option>
+                    <option value="value8">8</option>
+                </select>
+            </div>
+            <div class="line3">CHECK IN<br>
+                <select name="selected option">
+                    <option value="value1">Sat 23rd April, 2022</option>
+                    <option value="value2">Sun 24th April, 2022</option>
+                    <option value="value3">Mon 25th April, 2022</option>
+                    <option value="value4">Tue 26th April, 2022</option>
+                    <option value="value5">Wed 27th April, 2022</option>
+                    <option value="value6">Thur 28th April, 2022</option>
+                    <option value="value7">Fri 29th April, 2022</option>
+                    <option value="value8">Sat 30th April, 2022</option>
+                </select>
+            </div>
+            <div class="line4">CHECK OUT<BR>
+                <select name="selected option">
+                    <option value="value1">Sat 7th May, 2022</option>
+                    <option value="value2">Sun 8th May, 2022</option>
+                    <option value="value3">Mon 9th May, 2022</option>
+                    <option value="value4">Tue 10th May, 2022</option>
+                    <option value="value5">Wed 11th May, 2022</option>
+                    <option value="value6">Thur 12th May, 2022</option>
+                    <option value="value7">Fri 13th May, 2022</option>
+                    <option value="value8">Sat 14th May, 2022</option>
+                </select>
+            </div>
+        </div>
+        <div class="middle"> <a href="Https://book_here.com" > Book<br> Now </a> </div>
+        <div class="right">kbjs:f Kv</div>
+    </div>
+
+    <div id="box"> 
+        <div class="page1" style="padding: 0 100px ; box-sizing: border-box; text-align: justify    ;">
+            <h2>Trip Planner</h2>
+            <p>We are the best for your vacation.You can choose any part of the world, we will get you there , very affordable ,very safe and reliable, we prioritize your safety and comfort.Book a flight with us today and you will enjoy it
+            </p>
+            <div style="border: 1px solid black; width: 40px; height: 40px; background-color: black;"></div>
+            <div style="border: 1px solid lightgray; width: 40px; height: 40px; position: relative; bottom: 20px; left: 130px; background-color: gray;"></div>
+            <div></div>
+            <div style="border: 1px solid orangered; width: 150px; height: 40px; background-color: orangered; position: relative; left: 10px; bottom: 70px; padding: 10px; color: white;">The All Trip Place</div>
+        </div>
+        <div class="page2"></div>
+        <div class="page3"></div>
+        <div class="page4"></div>
+        <div class="page5"></div>
+    </div>
+
+    <div id="box2">
+        <div class="bulb1" style="padding-left: 100px; padding-top: 20px; box-sizing: border-box;">
+            <h1>Room & Suites </h1>
+            <p>Pick a plan that suites your taste and budget</p>
+        </div>
+        <div class="bulb2">
+            <div class="part1">
+                <div class="lin"> Deluxe room</div>
+            </div>
+            <div class="part2">
+                <div class="inner1">
+                    <div class="lin"> Premium room</div>
+                </div>
+                <div class="inner2">
+                    <div class="lin"> Special room</div>
+                </div>
+            </div>
+            <div class="part3">
+                <div class="inner3">
+                    <div class="lin">Twin room</div>
+                </div>
+                <div class="inner4">
+                    <div class="lin">Single room</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="fourth">
+        <div class="section1" style="padding-left: 100px; padding-top: 30px;">
+            <h2>Traveller's Experiences</h2>
+            <p>Here are some comments from our customers</p>
+        </div>
+        <div class="section2">
+            <div class="comment1">
+                <div class="circle1" style=" background-size: cover; text-align: justify; border: 1px solid yellow; height: 50px; width: 50px; background-color: grey; border-radius: 50px; position: relative; bottom: 20px; left: 30px; background-image: url('comment1.jpg'); " ></div>
+            </div>
+            <div class="comment2">
+                <div class="circle2" style=" background-size: cover; text-align: justify;  border: 1px solid yellow; height: 50px; width: 50px; background-color: grey; border-radius: 50px; position: relative; bottom: 20px; left: 30px; background-image: url('comment2.jpg'); " ></div>
+            </div>
+            <div class="comment3">
+                <div class="circle2" style=" background-size: cover; text-align: justify;  border: 1px solid yellow; height: 50px; width: 50px;  border-radius: 50px; position: relative; bottom: 20px; left: 30px; background-image: url('comment4.jpg" ></div>
+            </div>
+        </div>
+    </div>
+    <div id="last">
+        <div class="last-box1" > <h2>Suscribe <br>to Our Newsletter</h2></div>
+        <div class="last-box2">
+            <div class="last-box3">
+                <form action="">
+                    <textarea cols="35" rows="1" placeholder="name@gmail.com"></textarea>
+                </form>
+            </div>
+            <div class="last-box4">Suscribe</div>
+        </div>
+    </div>
+    
+</body>
+</html>
